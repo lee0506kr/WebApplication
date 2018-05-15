@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+/*선택자의 우선순위에 의해서,
+아이디 선택자가 먼저 적용,
+클래스 선택자, 태그선택자
+순서로 선택된 요소에 스타일이 적용된다.
+*/
+
+#desert{
+	color:green;
+}
+
+h1 {
+	/*태그 선택자*/
+	color: blue;
+}
+/*클래스 선택자*/
+.title {
+	color: red;
+}
+</style>
+<meta charset="UTF-8">
+<title>선택자 우선순위</title>
+</head>
+<body>
+
+	<img alt="이유비" src="img/ddd.jpg" width="500" height="400">
+	<h1 id="desert" class="title">세계의 사막</h1>
+	<h1 class="title">세계의 아름다운 사막</h1>
+	<ul list-style="none">
+		<li>모하비 사막</li>
+		<li>사하라 사막</li>
+		<li>고비 사막</li>
+	</ul>
+
+</body>
+</html>

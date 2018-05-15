@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+/*선택자의 종류: 전체,태그,클래스,아이디*/
+.bluetext {
+	/*클래스 선택자: class 속석의 값이 bluetext인 모든 요소를 선택해서 스타일 속성적용*/
+	color: blue;
+}
+
+.redtext {
+	color: red;
+}
+/*선택자는 여러개 작성가능*/
+h1, h2 {
+	color: green;
+}
+
+ul li {
+	color: red;
+}
+
+ol li {
+	color: blue;
+}
+/*p요소 중 class가 bluetext인 요소 선택*/
+p.bluetext {
+	font-weight: bold;
+}
+</style>
+<meta charset="UTF-8">
+<title>선택자 연습1</title>
+</head>
+<body>
+	<!--  -->
+	<h1 class="bluetext">축제 라인업</h1>
+	<h1 class="redtext">건대축제</h1>
+	<h2>트와이스</h2>
+	<p class="bluetext">건대축제 라인업 건국대 5월 15일-17일 15일(화) 트와이스 슈퍼비 면도
+		16일(수) 선미 위너 김보경</p>
+	<p class="redtext">건대축제 라인업 건국대 5월 15일-17일 15일(화) 트와이스 슈퍼비 면도
+		16일(수) 선미 위너 김보경</p>
+	<p>건대축제 라인업 건국대 5월 15일-17일 15일(화) 트와이스 슈퍼비 면도 16일(수) 선미 위너 김보경</p>
+
+	<ul>
+		<li>ul 목록1</li>
+		<li>ul 목록2</li>
+	</ul>
+	<ol>
+		<li>ol 목록1</li>
+		<li>ol 목록2</li>
+	</ol>
+
+
+
+</body>
+</html>
