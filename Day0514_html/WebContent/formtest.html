@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+ul {
+	list-style: none;
+}
+
+legend {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+li {
+	margin: 10px;
+}
+
+div {
+	width: 600px;
+	/*요소를 중간에 배치하기 0은 위아래 auto 좌우*/
+	margin: 0 auto;
+}
+</style>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- div 태그 이용하면 문서내에서 영역을 지정할 수 있다.
+	block 요소
+ -->
+
+
+
+	<div>
+
+		<h2>상품주문서</h2>
+		<from>
+		<fieldset>
+			<legend>개인 정보</legend>
+			<ul>
+				<li><label for="name">이름</label> <input type="text" name="name"
+					placeholder="아이디를 입력하세요"></li>
+				<li><label for="pwd">비밀번호</label><input type="password"
+					name="pwd" placeholder="비밀번호를 입력하세요"></li>
+			</ul>
+		</fieldset>
+		</br>
+		<fieldset>
+			<legend>배송지 정보</legend>
+			<ul>
+				<li><laber for="juso">주소</laber><input type="text" name="juso"></li>
+
+				<li><laber for="phon">전화번호</laber><input type="text"
+					name="phon"></li>
+
+				<li><laber for="memo">메모</laber> <textarea row="5" cols="30"
+						name="memo">
+		</textarea></li>
+
+			</ul>
+		</fieldset>
+		</br>
+		<fieldset>
+			<legend>주문 정보</legend>
+			<ul>
+				<li><input type="checkbox" id="a"><label for="a">과테말라
+						안티구아<small>(100g)</small><input type="number" name="number"
+						min="0" max="10" value="1">개
+				</label></li>
+				<li><input type="checkbox" id="b"><label for="b">인도네시아
+						만델링<small>(100g)</small><input type="number" name="number" min="0"
+						max="10" value="1">개
+				</label></li>
+				<li><input type="checkbox" id="c"><label for="c">탐나는도다(블렌딩)<small>(100g)</small><input
+						type="number" name="number" min="0" max="10" value="1">개
+				</label></li>
+			</ul>
+		</fieldset>
+		</br>
+		<input type="submit" value="주문하기"> <input type="submit"
+			value="다시작성"> </from>
+
+	</div>
+
+
+</body>
+</html>
