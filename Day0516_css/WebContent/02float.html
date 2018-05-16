@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+
+div{
+	margin: 10px;
+	padding: 10px;
+	float:left;
+}
+#box1{
+background-color: yellow;
+/*float : left;*/
+}
+/*안겹치는 이유 마진 때문에 , 마진병합*/
+#box2{
+background-color: aqua;
+/*float: right;*/
+}
+#box3{
+background-color: green;
+/*clear:both;*/ /*float 영향을 안받겠다*/
+}
+#box4{
+background-color: orange;
+}
+
+</style>
+<meta charset="UTF-8">
+<title>Float 배치 예제</title>
+</head>
+<body>
+<div id ="box1">박스1</div>
+<div id ="box2">박스2</div>
+<div id ="box3">박스3</div>
+<div id ="box4">박스4</div>
+</body>
+</html>
