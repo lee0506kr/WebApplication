@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>조건문</title>
+<script type="text/javascript">
+	//조건문의 결과에 따라서 실행할 문장을 선택할 때 사용
+	//if - else, switch
+
+	/* var use = prompt("휴대전화 사용량을 입력하세요", "0");
+	
+	 if (use >= 120) {
+	 document.write("중독자네요!!");
+	 } else {
+	 document.write("잘쓰고 계시네요!!");
+	 }
+
+	 //confirm 확인 : true 취소 : false
+	 var result = confirm("안녕하세요??");
+
+	 if (result) {
+	 alert("반갑습니다.");
+	 } else {
+
+	 alert("안녕못하냥?");
+	 } */
+
+	//사용자에게 사이트를 입력받아서 해당 사이트로 이동
+	var site = prompt("'네이버','구글','다음' 중 하나를 입력하세요");
+
+	switch (site) {
+	case "네이버":
+		url= "www.naver.com";
+		break;
+	case "구글":
+		url= "www.google.com";
+		break;
+	case "다음":
+		url= "www.daum.net";
+		break;
+	default:
+		alert("잘못입력하셨습니다.");
+		break;
+	}
+	//undefined,0,null >> false
+	if(url) {
+		//url 로 이동할 때는 location 객체 이용
+		location.href = "http://"+url;
+
+	}
+</script>
+
+</head>
+<body>
+	<!-- 위에서부터 아래로 읽는다. -->
+	<h1>Hello!!!!</h1>
+
+</body>
+</html>

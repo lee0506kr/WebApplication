@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var name = prompt("이름을 입력하세요");// prompt 새로운 창 뜨게 해준다.
+	alert(name); //경고창 띄운다.
+
+	//사용자에게 키, 몸무게를입력받고
+	//적정체중인지 아닌지 알려주기, 표준몸무게도 같이 알려주기
+	//적정체중 계산법(키-100)*0.9
+
+	var tall = prompt("키를 입력하세요");
+	alert(tall);
+	var weight = prompt("몸무게를 입력해주세요");
+	alert(weight);
+
+	var result = (tall - 100) * 0.9;
+
+	if (weight > result) {
+		alert("뚱이")
+	} else if (weight == result) {
+		alert("스펀지밥")
+	} else {
+		alert("징징이")
+
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>
