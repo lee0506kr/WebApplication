@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>배열</title>
+<script type="text/javascript">
+	/* var arr1 = new Array();
+
+	arr1[0] = 1;
+	arr1[1] = "문자열";
+	arr1[2] = true;
+
+	document.write("<h1>배열선언</h1>", "<br>");
+
+	document.write("배열의 크기: " + arr1.length, "<br>");
+	for (var i = 0; i < arr1.length; i++) {
+		document.write("<h2>" + arr1[i] + "<h2>", "<br>");
+
+	}
+	var arr2 = new Array(1, "100", true);
+	for (var i = 0; i < arr2.length; i++) {
+		document.write("<h2>" + arr2[i] + "<h2>", "<br>");
+
+	} */
+	
+
+	/*
+		sort(): 오름차순 정렬
+		reverse(): 배열 역순 정렬
+		slice(index1,index2) 인덱스 구간만큼 잘라서 배열객체 반환
+		pop(): 배열의 마지막 데이터 삭제
+		push(): 배열의 마지막 인덱스에 data 삽입
+		shift(): 배열의 첫번째 인덱스 삭제
+		unshift(): 첫번째 인덱스에 데이터 삽입
+		leghth: 길이 반환
+	
+	 */
+
+	var arr3 = [ 9, 1, 3, 6, 2, 7, 8, 5, 4 ];
+	var arr4 = arr3.sort();
+	/*
+	for (var i = 0; i < arr3.length; i++) {
+		document.write("<h2>" + arr3[i] + "</h2>", "<br>");
+	} */
+	//arr3.push(10);
+	//arr3.pop();
+	//arr3.shigt();
+	//arr3.unshift(10);
+	//for (var i = 0; i < arr3.length; i++) {
+	//	document.write("<h2>" + arr3[i] + "</h2>", "<br>");
+	//}
+	var arr5 = [ "Banna", "Pear", "Apple", "Mango", "Pineapple", "Grape" ];
+	arr5.sort(); //sort 하고 reverse 을해야 한다. 
+	arr5.reverse();
+	for (var i = 0; i < arr5.length; i++) {
+		document.write("<h2>" + arr5[i] + "</h2>", "<br>");
+	}
+	
+	var arr6 = new Array(2,"200",true);
+	for (var i = 0; i< arr6.length; i++){
+		document.write("<h2>"+arr6[i]+"<h2>","<br>");
+		document.write("<h3>안녕123123</h3>");
+		
+	}
+	
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>
