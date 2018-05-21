@@ -18,14 +18,12 @@
 
 			alert("id : " + id);
 			alert("pw : " + pw);
-			
-			
-			
+
 		};
+
 		document.loginForm.check1.checked = true;
 
-	
- 		document.loginForm.check1.onclick = function() {
+		document.loginForm.check1.onclick = function() {
 
 			document.loginForm.check2.checked = false;
 			document.loginForm.check3.checked = false;
@@ -42,27 +40,27 @@
 			document.loginForm.check1.checked = false;
 			document.loginForm.check2.checked = false;
 
-		}		
+		}
 		var check1 = document.loginForm.check1;
 		var check2 = document.loginForm.check1;
 		var check3 = document.loginForm.check1;
-		
+
 		/* 각각의 check 요소에 onclick 이벤트 핸들*/
-		
-		check1.onclick = function(){
-			if(check1.checked == true){
+
+		check1.onclick = function() {
+			if (check1.checked == true) {
 				check2.checked = false;
 				check3.checked = false;
-			}		
+			}
 		};
-		check2.onclick = function(){
-			if(check2.checked == true){
+		check2.onclick = function() {
+			if (check2.checked == true) {
 				check1.checked = false;
 				check3.checked = false;
 			}
 		};
-		check3.onclick = function(){
-			if(check3.checked == true){
+		check3.onclick = function() {
+			if (check3.checked == true) {
 				check2.checked = false;
 				check1.checked = false;
 			}
