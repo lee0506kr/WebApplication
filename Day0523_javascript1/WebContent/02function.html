@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -61,4 +62,69 @@
 
 
 </body>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>함수 2</title>
+<script type="text/javascript">
+	/*함수 파라미터 및 반환값 작성*/
+	//파라이터: 함수 선언문에 선언되는 변수,
+	//함수 실행시에 필요한 값을 외부로 부터 받아오기 위해서 선언
+	//파라미터로 받은 값을 제곱해서 출력하는 함수
+	/* var f = function(d) {
+		return d * d;
+	}; */
+
+	//var value = f(3);//3이 d안의 값으로 들어간 다 d = 3 이다.
+
+	//argument: 함수 호출시에 넘겨주는 값
+	//자바스크립트는 파라미터를 선언안해도 값이 나온다.
+	/* var value = f(3, 4, 5);
+	alert(value); */
+
+	//선언하지 않은 인자값도 받아서 사용 가능
+	//argumentㄴ: 호출되는 함수가 받은 인자갑에 대한 정보르 가지고 있음
+
+/* 	var sum = function() {
+		var sumArg = 0;
+
+		alert("입력받은 인자길이:"+arguments.length);
+		
+		
+		for(var i=0; i<arguments.length;i++){
+			sumArg = sumArg +arguments[i];
+			
+		}
+		return sumArg;
+		
+
+	}
+	alert(sum(1, 2, 3, 4, 5)); */
+	
+	//인자값으로 들어오는 모든 값을 곱해서 결과를 반환하는 함수 만들기
+	
+	var multi = function() {
+		var multiArg=1;
+
+		alert("입력받은 인자길이:"+arguments.length);
+		
+		
+		for(var i=0; i<arguments.length;i++){
+			multiArg = multiArg * arguments[i];
+			
+		}
+		return multiArg;
+	}
+	alert(multi(1, 2, 3, 4, 5));
+	
+	
+</script>
+</head>
+<body>
+
+
+</body>
+>>>>>>> 982fb4433062aea227b52a65aa0d18e866994188
 </html>
