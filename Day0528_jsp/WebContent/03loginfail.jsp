@@ -1,4 +1,4 @@
-"u<%@ page language="java" contentType="text/html; charset=UTF-8"
+<%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -7,15 +7,14 @@
 <title>메인화면</title>
 </head>
 <body>
-<%
-		String id = request.getParameter("userid");
-	%>
-	
-	로그인성공!! 메인화면 입니다.<br>
-	<%=id%>님 반갑습니다.
-	
-
-
-
+	로그인 실패!! 
+	원인: <%=request.getAttribute("msg")%>
 </body>
 </html>
+
+
+
+
+
+
+

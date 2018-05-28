@@ -31,7 +31,9 @@ head>
 	<%-- 해당하는 key의 파라미터가 여러개일 경우 배열 반환 --%>
 	<%
 		
-		String[] pets = request.getParameterValues("pet");
+		String[] pets = 
+		
+		request.getParameterValues("pet");
 		for (int i = 0; i < pets.length; i++) {
 			out.print("애완동물 : " + pets[i] + "<br>");
 		}

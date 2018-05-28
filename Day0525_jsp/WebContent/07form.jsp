@@ -7,6 +7,9 @@
 <title>데이터 전달하는 폼</title>
 </head>
 <body>
+
+
+
 	<form action="07formResult.jsp" method="post">
 	<p><label>이름<input type="text"name="name"></label></p>
 	<p><label>주소<input type="text"name="address"></label></p>

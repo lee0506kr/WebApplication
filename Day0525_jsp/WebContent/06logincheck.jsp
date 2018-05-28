@@ -4,13 +4,6 @@
 	String myPw = "12345";%>
 
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>로그인체크</title>
-</head>
-<body>
 	<!-- 여기서 login.jsp에서 보낸 데이터를 받아봅시다. -->
 
 
@@ -34,24 +27,34 @@
 				=request.getRequestDispatcher("06loginsuccess.jsp");
 				dispatcher.forward(request, response);
 				 */
-
+				
 				RequestDispatcher dispatcher = request.getRequestDispatcher("06loginsuccess.jsp");
 
 			} else {
-				out.print("비밀번호가 틀렸습니다.");
+				//out.print("비밀번호가 틀렸습니다.");
+				request.setAttribute("msg","비밀번호가 틀렸습니다.");
+				
+				RequestDispatcher dispatcher
+				= request.getRequestDispatcher("06loginFail.jsp");
+				
+				dispatcher.forward(request, response);
 			}
 		} else {
-			out.print("아이디가 틀렷습니다.");
+			//out.print("아이디가 틀렷습니다.");
+			request.setAttribute("msg","아이디가 틀렸습니다.");
+			
+			RequestDispatcher dispatcher
+			= request.getRequestDispatcher("06loginFail.jsp");
+			
+			dispatcher.forward(request, response);
 		}
 	%>
+	
+	
+	
 
-	아이디 :<%=id%>
-	비밀번호 :<%=pw%>
+	<%-- 아이디 :<%=id%>
+	비밀번호 :<%=pw%> --%>
 
 
 
-
-
-
-</body>
-</html>
