@@ -36,7 +36,7 @@
 				<td colspan="5"  align="right">
 					
 					<input  type="button" value = "게시글 등록" onclick="location.href='board?command=board_write_form'">
-			
+	
 			</tr>
 
 		</table>

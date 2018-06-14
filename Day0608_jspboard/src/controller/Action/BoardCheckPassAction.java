@@ -21,6 +21,7 @@ public class BoardCheckPassAction implements Action{
 		String num = req.getParameter("num");
 		String pass = req.getParameter("pass");
 		BoardDao dao  = BoardDaoImp.getInstance();
+		
 		Board bard = dao.selectOne(num);
 		String url = "";
 		if(bard.getPass().equals(pass)) {

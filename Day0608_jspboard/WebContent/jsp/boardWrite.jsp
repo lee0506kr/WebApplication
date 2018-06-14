@@ -21,13 +21,13 @@
 			<table>
 				<tr>
 					<th>작성자</th>
-					<td><input type="Text" name="name"   onblur="checkForm();">*필수</td>
+					<td><input type="Text" name="name"  id = "name"  onblur="checkForm();">*필수</td>
 				</tr>
 
 				<tr>
 					<th>비밀번호</th>
-					<td><input type="password" name="pass"  onblur="checkPassword();">*필수(게시글 수정, 삭제시
-						필요 )</td>
+					<td><input type="password" name="pass" id="pass"  onblur="chkPwd();">*필수(게시글 수정, 삭제시필요 )</td>
+						
 				</tr>
 
 				<tr>
@@ -41,6 +41,7 @@
 					<td><input type="Text" name="title"></td>
 				</tr>
 
+			
 				<tr>
 					<th>내용</th>
 					<td><textarea rows="15" cols="70" name="content"></textarea></td>

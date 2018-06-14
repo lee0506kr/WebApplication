@@ -10,8 +10,9 @@ public class BoardCheckPassFormAction implements Action{
 
 	@Override
 	public void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		// 비밀번호 입력할 수 잇는 화면 띄워주기
-		String url ="jsp/boardCheckPass.jsp";
+	
+		
+		String url ="layout.jsp";
 		req.getRequestDispatcher(url).forward(req, resp);
 		
 	}
